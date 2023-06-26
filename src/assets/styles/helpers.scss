@@ -1,0 +1,116 @@
+.flex {
+    display: flex;
+  }
+  
+  .flex-row {
+    @extend .flex;
+    flex-direction: row;
+  }
+  
+  .flex-row-reverse {
+    @extend .flex;
+    flex-direction: row-reverse;
+  }
+  
+  .flex-col {
+    @extend .flex;
+    flex-direction: column;
+  }
+  
+  .flex-col-reverse {
+    @extend .flex;
+    flex-direction: column-reverse;
+  }
+  
+  .flex-wrap {
+    @extend .flex;
+    flex-wrap: wrap;
+  }
+  
+  .flex-no-wrap {
+    @extend .flex;
+    flex-wrap: nowrap;
+  }
+  
+  .flex-wrap-reverse {
+    @extend .flex;
+    flex-wrap: wrap-reverse;
+  }
+  
+  .flex-justify-start {
+    @extend .flex;
+    justify-content: flex-start;
+  }
+  
+  .flex-justify-end {
+    @extend .flex;
+    justify-content: flex-end;
+  }
+  
+  .flex-justify-center {
+    @extend .flex;
+    justify-content: center;
+  }
+  
+  .flex-justify-between {
+    @extend .flex;
+    justify-content: space-between;
+  }
+  
+  .flex-justify-around {
+    @extend .flex;
+    justify-content: space-around;
+  }
+  
+  .flex-align-start {
+    @extend .flex;
+    align-items: flex-start;
+  }
+  
+  .flex-align-end {
+    @extend .flex;
+    align-items: flex-end;
+  }
+  
+  .flex-align-center {
+    @extend .flex;
+    align-items: center;
+  }
+  
+  .flex-align-baseline {
+    @extend .flex;
+    align-items: baseline;
+  }
+  
+  .flex-align-stretch {
+    @extend .flex;
+    align-items: stretch;
+  }
+
+  // Define some standard sizes
+$sizes: (
+  '5': 5px,
+  '10': 10px,
+  '15': 15px,
+  '20': 20px,
+  '25': 25px,
+  '30': 30px
+);
+
+// Generate margin classes
+@each $name, $size in $sizes {
+  .m-#{$name} { margin: $size !important; }
+  .mt-#{$name} { margin-top: $size !important; }
+  .mr-#{$name} { margin-right: $size !important; }
+  .mb-#{$name} { margin-bottom: $size !important; }
+  .ml-#{$name} { margin-left: $size !important; }
+}
+
+// Generate padding classes
+@each $name, $size in $sizes {
+  .p-#{$name} { padding: $size !important; }
+  .pt-#{$name} { padding-top: $size !important; }
+  .pr-#{$name} { padding-right: $size !important; }
+  .pb-#{$name} { padding-bottom: $size !important; }
+  .pl-#{$name} { padding-left: $size !important; }
+}

@@ -1,0 +1,92 @@
+.contact {
+  position: relative;
+}
+
+.contact-img{
+  position: absolute;
+  top: -120px;
+  left: 0;
+  width: 440px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 200px;
+
+  input,
+  textarea {
+    width: 538px;
+    height: 50px;
+    border-radius: 5px;
+    border: 1px solid #ADADAD;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #ADADAD;
+
+    &::placeholder {
+      color: #ADADAD;
+    }
+
+    &.error {
+      border-color: #EA4F24;
+    }
+  }
+
+  textarea {
+    height: 100px;
+    resize: none;
+  }
+
+  .checkbox-wrapper {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+
+    input[type="checkbox"] {
+      width: 25px;
+      height: 25px;
+    }
+
+    label {
+      width: 70%;
+    }
+
+    input {
+      margin-right: 10px;
+    }
+  }
+
+  button {
+    width: 306px;
+    height: 60px;
+    border-radius: 8px;
+    background-color: #00A4F7;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: 0em;
+    text-align: center;
+    position: relative;
+    right: 125px;
+    margin-top: 20px;
+
+
+    &:disabled {
+      background-color: #ADADAD;
+    }
+  }
+  .sended{
+    width: 20%;
+    position: relative;
+    top: 10px;
+    right: 120px;
+  }
+}

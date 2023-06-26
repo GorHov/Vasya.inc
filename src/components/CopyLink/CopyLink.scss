@@ -1,0 +1,44 @@
+@import "../../assets/styles/variables";
+
+.copy-link {
+  background-color: #fff2c3;
+  height: 44px;
+  border-radius: 8px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 12px;
+}
+
+.full-link {
+  width: 70%;
+}
+
+.small-link {
+  width: 47%;
+}
+
+.link-text {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 29px;
+  letter-spacing: 0em;
+  text-align: left;
+  padding-left: 16px;
+  margin: 0;
+  a {
+    color: $color-black;
+  }
+}
+
+button {
+  border: none;
+  background-color: #fff2c3;
+  font-size: 18px;
+  height: 20px;
+  margin: 0;
+  font-weight: 700;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #333333;
+}

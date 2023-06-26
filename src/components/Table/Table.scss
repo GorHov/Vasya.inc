@@ -1,0 +1,18 @@
+.table {
+    width: 65%;
+    border-collapse: collapse;
+  
+    th, td {
+      padding: 40px;
+      text-align: left;
+    }
+  
+    th {
+      border-bottom: 2px solid #00A4F7;
+    }
+  
+    td {
+      border-bottom: 1px solid #ccc;
+    }
+  }
+  

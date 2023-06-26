@@ -1,0 +1,67 @@
+@import '../../assets/styles/variables';
+
+.app-header {
+  font-family: $font-family;
+  background-color: $color-bg;
+  box-shadow: $shadow;
+  padding-left: 20px;
+  padding-top: 18px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 9999;
+  transition: 0.32s ease-in-out;
+}
+
+.scrolled {
+  padding-top: 0;
+}
+
+.header-container {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+
+  p {
+    color: #128ACE;
+  }
+}
+
+.logo-container {
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 31px;
+  letter-spacing: 0em;
+  text-align: left;
+  p {
+    color: $color-black;
+  }
+}
+
+.text-blocks-container {
+  color: $color-primary;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: 0em;
+  text-align: left;
+
+  p {
+    margin-right: 30px;
+  }
+}
+
+.greetings-form-container {
+  color: $color-primary;
+}
+
+p {
+  margin: 15px;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}

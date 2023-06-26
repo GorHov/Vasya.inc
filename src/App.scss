@@ -1,0 +1,25 @@
+@import './assets/styles/main';
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 75px;
+}
+
+body {
+  font-family: $font-family;
+  font-size: $font-size;
+  background-color: $color-bg;
+}
+
+.container {
+  padding: 0 50px; 
+  margin-top: 100px
+}
+
+.text-content{
+  width: 65%;
+}
+
+p{
+  margin-left: 0;
+}
